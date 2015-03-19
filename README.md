@@ -51,11 +51,11 @@ System Requirements
 
  * [libffi](https://sourceware.org/libffi/)
 
- In ubuntu you can do ```sudo apt-get install libffi-dev```
+ In ubuntu you can do `sudo apt-get install libffi-dev`
 
  * Libssl
 
- In ubuntu you can do ```sudo apt-get install libssl-dev```
+ In ubuntu you can do `sudo apt-get install libssl-dev`
 
 Write-it is built using Django. You should install Django and its dependencies inside a virtualenv. We suggest you use [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/) to create and manage virtualenvs, so if you don’t already have it, [go install it](http://virtualenvwrapper.readthedocs.org/en/latest/install.html#basic-installation), remembering in particular to add the required lines to your shell startup file.
 
@@ -93,13 +93,11 @@ Testing and Development
 
 If you want to test without PopitAPI or Elasticsearch
 -----------------------------------------------------
-Elasticsearch and a popit api both are optional and can be turned off by creating a new local_settings.py file ```vi writeit/local_settings.py``` with the following content
+Elasticsearch and a popit api both are optional and can be turned off by creating a new local_settings.py file `vi writeit/local_settings.py` with the following content
 
 
-```
-LOCAL_POPIT = False
-LOCAL_ELASTICSEARCH = False
-```
+    LOCAL_POPIT = False
+    LOCAL_ELASTICSEARCH = False
 
 Testing with Popit and Elasticsearch
 ------------------------------------
@@ -112,7 +110,7 @@ After you have mongodb running you can do in a separate terminal:
 Running tests
 --------------
 
-For testing you need to run ```./test.py```
+For testing you need to run `./test.py`
 
 Coverage Analysis
 -----------------
@@ -122,9 +120,7 @@ Logging in
 --------------
 At this point you probably have write-it running without any users. You could create a (super) user by running:
 
-```
-python manage.py createsuperuser
-```
+    python manage.py createsuperuser
 
 It will ask you the username and password (which you will need to repeat).
 

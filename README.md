@@ -142,4 +142,4 @@ The github repos and the status of the development are listed below:
 
 There are instructions to install write-it in heroku
 ----------------------------------------------------
-The instructions are in [the following link](deploying_to_heroku.md).
+The instructions are in [docs/deploying_to_heroku.md](docs/deploying_to_heroku.md).

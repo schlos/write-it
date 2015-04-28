@@ -83,6 +83,7 @@
         <thead>
           <tr>
             <th width="50%">{% trans 'Name' %}</th>
+            <th>{% trans 'Activation' %}</th>
             <th>{% trans 'Recipients' %}</th>
             <th>{% trans 'Messages' %}</th>
             <th>{% trans 'Edit' %}</th>
@@ -103,6 +104,7 @@
                     </script>
                 {% endif %}
             </td>
+            <td><a href="{% url 'contact_page' subdomain=writeitinstance.slug %}"><i class="fa fa-comment-o"></i> {% trans "contact us" %}</a></td>
             <td><a href="{% url 'contacts-per-writeitinstance' subdomain=writeitinstance.slug %}"><i class="fa fa-user"></i> <span class="badge">{{ writeitinstance.persons.count }}</span></a></td>
             <td><a href="{% url 'messages_per_writeitinstance' subdomain=writeitinstance.slug %}"><i class="fa fa-envelope-o"></i> <span class="badge">{{ writeitinstance.message_set.count }}</span></a></td>
             <td><a href="{% url 'writeitinstance_basic_update' subdomain=writeitinstance.slug %}"><i class="fa fa-pencil"></i></a></td>
